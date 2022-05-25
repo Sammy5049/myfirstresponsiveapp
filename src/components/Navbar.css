@@ -1,0 +1,111 @@
+.header {
+ position: fixed;
+ height: 90px;
+ width: 100%;
+ top: 0;
+ left: 0;
+ overflow: hidden;
+ z-index: 1;
+ transition: .3s ease-in;
+background-color: rgba(0, 0, 0);
+}
+
+.header .navbar {
+height: 100%;
+max-width: 1240px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: auto;
+padding: 0 1rem;
+
+}
+
+.header .navbar h1{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: 800;
+ font-style: italic;
+ font-size: 2.5rem;
+ color: white;
+ border-top: 3px  solid whitesmoke;
+ border-left: 3px solid whitesmoke;
+ padding: .5rem;
+}
+
+.header .nav-menu {
+ display: flex;
+}
+.header .nav-menu a {
+ color: white;
+}
+
+.header .nav-item {
+padding: 1rem;
+font-weight: 500;
+}
+
+.header .nav-item a:hover {
+ padding-bottom: 12px;
+ border-bottom: 3px solid yellow;
+}
+
+.hamburger {
+ display: none;
+}
+
+@media screen and (max-width:940px) {
+   .header {
+       max-width: 100%;
+       background-color: rgba(0, 0, 0, 0.892);
+  }
+
+  .header .navbar {
+   max-width: 100%;
+  }
+
+  .hamburger {
+   display: block;
+  }
+  .nav-menu{
+   flex-direction: column;
+   top: 90px;
+   left: -100%;
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.892);
+   width: 100%;
+   height: 90vh;
+   z-index: 999;
+   text-align: center;
+   transition: .3s;
+    
+  }
+ .nav-menu.active {
+  left: 0;
+ }
+
+.nav-item {
+ margin: 1.5rem 0;
+}
+.header .navbar img {
+ width: 100px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

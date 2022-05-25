@@ -1,0 +1,44 @@
+.Footer {
+ width: 100%;
+ background-color: black;
+ color: white;
+ padding: 3rem 1rem;
+}
+
+
+.Footer .content {
+
+ max-width: 1240px;
+ margin: auto;
+ text-align: center;
+}
+
+.Footer ul {
+ display: flex;
+ justify-content: center;
+ 
+
+}
+
+.Footer li {
+ padding: 1rem;
+}
+
+.Footer li a {
+ color: white;
+}
+
+.Footer li a:hover {
+ padding-bottom: 12px;
+ border-bottom: 3px solid yellow;
+}
+
+
+.bottom {
+ text-align: center;
+ padding-top: 3rem;
+}
+.line {
+ margin-bottom: 1rem;
+
+}
